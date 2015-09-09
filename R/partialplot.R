@@ -84,7 +84,7 @@ partialplot.partialdep <- function(obj, central_func = colMeans,
   if ("xlab" %!in% names(plot_args))
     plot_args$xlab <- x_name
   if ("ylab" %!in% names(plot_args))
-    ylab <- "Response"
+    plot_args$ylab <- "Response"
   if ("main" %!in% names(plot_args))
     plot_args$main <- sprintf('Partial dependence plot for "%s"', x_name)
   if ("ylim" %!in% names(plot_args))
